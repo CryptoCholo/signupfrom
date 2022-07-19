@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="input-form" novalidate>
+        <div class="input-div">
+            <label for="email" class="input-label">Email</label>
+            <input type="email" name="email" class="input-item" id="email" minlength="8" required>
+            <span class="material-icons incorrect">
+                info
+            </span>
+            <span class="material-icons correct">
+                check_circle
+            </span>
+            <span class="input-error">
+            </span>  
+        </div>
+        <div class="input-div">
+            <label for="country" class="input-label">Country</label>
+            <input type="text" name="country" class="input-item" id="country" minlength="3" required>
+            <span class="material-icons incorrect">
+                info
+            </span>
+            <span class="material-icons correct">
+                check_circle
+            </span>
+            <span class="input-error">
+            </span>  
+        </div>
+        <div class="input-div">
+            <label for="zip-code" class="input-label">Zip code</label>
+            <input type="number" name="zip-code" class="input-item" id="zip-code" pattern="" required>
+            <span class="material-icons incorrect">
+                info
+            </span>
+            <span class="material-icons correct">
+                check_circle
+            </span>
+            <span class="input-error">
+            </span>  
+        </div>
+        <div class="input-div">
+            <label for="password" class="input-label">Password</label>
+            <input type="password" name="password" class="input-item" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+            <span class="material-icons incorrect">
+                info
+            </span>
+            <span class="material-icons correct">
+                check_circle
+            </span>
+            <span class="input-error">
+            </span>  
+        </div>
+        <div class="input-div">
+            <label for="confirm-password" class="input-label">Confirm Password</label>
+            <input type="password" name="confirm-password" class="input-item" id="confirm-password" required>
+            <span class="material-icons incorrect">
+                info
+            </span>
+            <span class="material-icons correct">
+                check_circle
+            </span>
+            <span class="input-error">
+            </span>  
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+        <script src="main.js"></script>
+    </form>
+</body>
+</html>

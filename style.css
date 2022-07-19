@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(/home/mrcholo/Downloads/pics/signupbckgrnd.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#input-form {
+    width: 30vw;
+    padding: 3rem;
+    background: rgb(184, 146, 245);
+    border-radius: 10px;
+}
+
+.input-div {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-label {
+    font-weight: bold;
+    font-family: 'Vollkorn SC', serif;
+    color:  rgb(31, 1, 48);
+}
+
+.input-item {
+    font-family: 'Vollkorn SC', serif;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    border: 1px solid  rgb(31, 1, 48);
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.input-item.notvalid {
+    border-color: red;
+}
+
+.input-item:valid {
+    border-color: green;
+}
+
+.input-div .material-icons {
+    position: absolute;
+    top: 35px;
+    right: -30px;
+}
+
+.correct {
+    color: green;
+    display: none;
+}
+
+.incorrect {
+    color: red;
+    display: none;
+}
+
+.input-error {
+    margin-top: 5px;
+    font-size: 15px;
+    color: red;
+}
+
+.submit-btn {
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(31, 1, 48);
+    color: rgb(184, 146, 245);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px dotted  rgb(31, 1, 48);
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color:  rgba(31, 1, 48, 0.5);
+    color: rgb(31, 1, 48); 
+}
