@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url(/home/mrcholo/Downloads/pics/signupbckgrnd.jpg);
+    background: url(/signupbckgrnd.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
